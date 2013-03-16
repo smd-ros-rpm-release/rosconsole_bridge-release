@@ -1,30 +1,35 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 2.8)
 project(rosconsole_bridge)
 
-find_package(catkin REQUIRED COMPONENTS console_bridge rosconsole)
+find_package(catkin REQUIRED)
+catkin_stack()
 
-include_directories(include ${catkin_INCLUDE_DIRS})
-link_directories(${catkin_LIBRARY_DIRS})
-
-catkin_package(
-  INCLUDE_DIRS include
+catkin_project(${PROJECT_NAME}
   LIBRARIES ${PROJECT_NAME}
-  CATKIN_DEPENDS rosconsole
-  DEPENDS console_bridge 
-)
+  INCLUDE_DIRS include
+  )
 
-add_library(${PROJECT_NAME} src/bridge.cpp)
+find_package(ROS REQUIRED COMPONENTS rosconsole)
+include_directories(${ROS_INCLUDE_DIRS})
 
-target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES})
+find_package(console_bridge REQUIRED)
+include_directories(${console_bridge_INCLUDE_DIR})
+include_directories(include)
 
-install(
-  TARGETS ${PROJECT_NAME}
-  ARCHIVE DESTINATION lib
-  LIBRARY DESTINATION lib
-)
+add_library(${PROJECT_NAME}
+  src/bridge.cpp)
 
-install(
-  DIRECTORY include/
-  DESTINATION include
-  FILES_MATCHING PATTERN "*.h"
-)
+target_link_libraries(${PROJECT_NAME} ${console_bridge_LIBRARIES} ${ROS_LIBRARIES})
+
+install(TARGETS ${PROJECT_NAME}
+        ARCHIVE DESTINATION lib
+        LIBRARY DESTINATION lib)
+
+install(DIRECTORY include/
+        DESTINATION include
+        FILES_MATCHING PATTERN "*.h")
+
+# for compatibility with old build system
+install(FILES manifest.xml
+        DESTINATION share/${PROJECT_NAME})
+
