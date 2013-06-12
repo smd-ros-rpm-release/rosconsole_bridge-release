@@ -36,7 +36,7 @@ tracks:
     ros_distro: groovy
     vcs_type: git
     vcs_uri: https://github.com/ros/rosconsole_bridge.git
-    version: 0.2.6
+    version: :{auto}
   hydro:
     actions:
     - bloom-export-upstream :{vcs_local_uri} :{vcs_type} --tag :{release_tag} --display-uri
