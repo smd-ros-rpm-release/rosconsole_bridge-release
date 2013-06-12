@@ -9,8 +9,7 @@ link_directories(${catkin_LIBRARY_DIRS})
 catkin_package(
   INCLUDE_DIRS include
   LIBRARIES ${PROJECT_NAME}
-  CATKIN_DEPENDS rosconsole
-  DEPENDS console_bridge 
+  CATKIN_DEPENDS console_bridge rosconsole
 )
 
 add_library(${PROJECT_NAME} src/bridge.cpp)
