@@ -1,3 +1,22 @@
+## rosconsole_bridge (indigo) - 0.4.1-0
+
+The packages in the `rosconsole_bridge` repository were released into the `indigo` distro by running `/usr/bin/bloom-release -r indigo -t indigo rosconsole_bridge` on `Tue, 24 Jun 2014 22:49:19 -0000`
+
+The `rosconsole_bridge` package was released.
+
+Version of package(s) in repository `rosconsole_bridge`:
+- rosdistro version: `0.4.0-0`
+- old version: `0.4.0-0`
+- new version: `0.4.1-0`
+
+Versions of tools used:
+- bloom version: `0.5.10`
+- catkin_pkg version: `0.2.2`
+- rosdep version: `0.10.27`
+- rosdistro version: `0.3.5`
+- vcstools version: `0.1.35`
+
+
 ## rosconsole_bridge (indigo) - 0.4.0-0
 
 The packages in the `rosconsole_bridge` repository were released into the `indigo` distro by running `/usr/bin/bloom-release -r indigo -t indigo rosconsole_bridge` on `Tue, 24 Jun 2014 11:05:35 -0000`
