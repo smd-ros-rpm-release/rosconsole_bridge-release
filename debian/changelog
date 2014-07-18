@@ -1,0 +1,131 @@
+ros-indigo-rosconsole-bridge (0.4.2-0saucy) saucy; urgency=high
+
+  * update maintainers
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Fri, 18 Jul 2014 07:00:00 -0000
+
+ros-indigo-rosconsole-bridge (0.4.1-0saucy) saucy; urgency=high
+
+  * update find_package for console bridge to reflect 3rdparty status (#8 <https://github.com/ros/rosconsole_bridge/issues/8>)
+
+ -- Mirza Shah <mshah@willowgarage.com>  Wed, 25 Jun 2014 07:00:00 -0000
+
+ros-indigo-rosconsole-bridge (0.4.0-0saucy) saucy; urgency=high
+
+  * rename variables within rosconsole macros (ros/ros_comm#442 <https://github.com/ros/ros_comm/issues/442>)
+  * convert to use console bridge from upstream debian package (ros/rosdistro#4633 <https://github.com/ros/rosdistro/issues/4633>)
+
+ -- Mirza Shah <mshah@willowgarage.com>  Tue, 24 Jun 2014 07:00:00 -0000
+
+ros-indigo-rosconsole-bridge (0.3.4-0saucy) saucy; urgency=high
+
+  * Allows non-ros components to utilize the prefix functionality of log4j
+  * Contributors: Dave Coleman, Ioan A Sucan
+
+ -- Mirza Shah <mshah@willowgarage.com>  Sat, 15 Feb 2014 08:00:00 -0000
+
+ros-indigo-rosconsole-bridge (0.3.3-0saucy) saucy; urgency=high
+
+  * fixing catkin as a buildtool dependency
+  * Contributors: Dirk Thomas, Tully Foote
+
+ -- Mirza Shah <mshah@willowgarage.com>  Wed, 21 Aug 2013 07:00:00 -0000
+
+ros-indigo-rosconsole-bridge (0.3.2-0saucy) saucy; urgency=high
+
+  * changes due to renames in console_bridge
+  * Contributors: Ioan Sucan
+
+ -- Mirza Shah <mshah@willowgarage.com>  Fri, 12 Apr 2013 07:00:00 -0000
+
+ros-indigo-rosconsole-bridge (0.3.1-0saucy) saucy; urgency=high
+
+  * fix deps
+  * update e-mail address
+  * Contributors: Ioan Sucan
+
+ -- Mirza Shah <mshah@willowgarage.com>  Thu, 14 Mar 2013 04:24:00 -0000
+
+ros-indigo-rosconsole-bridge (0.3.0-0saucy) saucy; urgency=high
+
+
+
+ -- Mirza Shah <mshah@willowgarage.com>  Thu, 14 Mar 2013 02:39:00 -0000
+
+ros-indigo-rosconsole-bridge (0.2.7-0saucy) saucy; urgency=high
+
+  * changes due to renames in console_bridge
+  * Create README.md
+  * Updated package xml to be more compliant to spec as well as adding maintainer
+  * Contributors: Ioan Sucan, Mirza Shah, isucan
+
+ -- Mirza Shah <mshah@willowgarage.com>  Wed, 12 Jun 2013 07:00:00 -0000
+
+ros-indigo-rosconsole-bridge (0.2.6-0saucy) saucy; urgency=high
+
+  * update log level
+  * Fixing style issues in CMakeLists.txt
+  * Contributors: Ioan Sucan, William Woodall
+
+ -- Mirza Shah <mshah@willowgarage.com>  Mon, 10 Dec 2012 08:00:00 -0000
+
+ros-indigo-rosconsole-bridge (0.2.5-0saucy) saucy; urgency=high
+
+  * Update cmake to pass along console_bridge
+    Also changed it to depend on console_bridge
+    like a catkin dependency.
+  * Added tag 0.2.4 for changeset e9f39dd361bf
+  * Contributors: Ioan Sucan, William Woodall, isucan
+
+ -- Mirza Shah <mshah@willowgarage.com>  Wed, 05 Dec 2012 08:00:00 -0000
+
+ros-indigo-rosconsole-bridge (0.2.4-0saucy) saucy; urgency=high
+
+  * updates to package.xml
+  * Added tag 0.2.3 for changeset 63015a123bb7
+  * Contributors: Ioan Sucan, Tully Foote
+
+ -- Mirza Shah <mshah@willowgarage.com>  Thu, 18 Oct 2012 07:00:00 -0000
+
+ros-indigo-rosconsole-bridge (0.2.3-0saucy) saucy; urgency=high
+
+  * removing outdated install rule
+  * Added tag 0.2.2 for changeset 3fb270551aee
+  * Contributors: Tully Foote
+
+ -- Mirza Shah <mshah@willowgarage.com>  Sun, 07 Oct 2012 06:24:00 -0000
+
+ros-indigo-rosconsole-bridge (0.2.2-0saucy) saucy; urgency=high
+
+  * fixing depend tags
+  * Added tag 0.2.1 for changeset d4cfe2aea73d
+  * Contributors: Tully Foote
+
+ -- Mirza Shah <mshah@willowgarage.com>  Sun, 07 Oct 2012 01:49:00 -0000
+
+ros-indigo-rosconsole-bridge (0.2.1-0saucy) saucy; urgency=high
+
+  * converting to package.xml from stack.xml, and dropping manifest
+  * Added tag 0.2.0 for changeset 25da297e8ddb
+  * Contributors: Ioan Sucan, Tully Foote
+
+ -- Mirza Shah <mshah@willowgarage.com>  Sat, 06 Oct 2012 23:59:00 -0000
+
+ros-indigo-rosconsole-bridge (0.2.0-0saucy) saucy; urgency=high
+
+  * update stack version
+  * patches for groovy
+  * Added tag fuerte for changeset f05a07a4dc8c
+  * Added tag 0.1.0 for changeset 119bd5db978d
+  * Contributors: Ioan Sucan
+
+ -- Mirza Shah <mshah@willowgarage.com>  Sun, 02 Sep 2012 07:00:00 -0000
+
+ros-indigo-rosconsole-bridge (0.1.0-0saucy) saucy; urgency=high
+
+  * first commit
+  * Contributors: Ioan Sucan
+
+ -- Mirza Shah <mshah@willowgarage.com>  Mon, 02 Jul 2012 18:15:00 -0000
+
+

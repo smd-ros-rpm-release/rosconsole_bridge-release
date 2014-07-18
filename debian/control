@@ -1,0 +1,12 @@
+Source: ros-indigo-rosconsole-bridge
+Section: misc
+Priority: extra
+Maintainer: Dirk Thomas <dthomas@osrfoundation.org>
+Build-Depends: debhelper (>= 9.0.0), libconsole-bridge-dev, ros-indigo-catkin, ros-indigo-rosconsole (>= 1.11.5)
+Homepage: http://www.ros.org/wiki/rosconsole_bridge
+Standards-Version: 3.9.2
+
+Package: ros-indigo-rosconsole-bridge
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libconsole-bridge-dev, ros-indigo-rosconsole
+Description: rosconsole_bridge is a package used in conjunction with console_bridge and rosconsole for connecting console_bridge-based logging to rosconsole-based logging.
